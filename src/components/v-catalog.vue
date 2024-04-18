@@ -1,13 +1,8 @@
 <template>
   <div class="v-catalog">
     <h2>Я каталог!</h2>
-    <vCatalogItem
-      v-for="product in PRODUCTS"
-      :key="product.article"
-      :productData="product"
-      @sendToParent="cartUpdate(true, product)"
-      @removeFromCart="cartUpdate(false, product)"
-    />
+    <vCatalogItem v-for="product in PRODUCTS" :key="product.article" :productData="product"
+      @sendToParent="cartUpdate(true, product)" @removeFromCart="cartUpdate(false, product)" />
   </div>
 </template>
 
@@ -20,7 +15,8 @@ export default {
   components: { vCatalogItem },
   props: {},
   data() {
-    return {};
+    return {
+    };
   },
   computed: {
     ...mapGetters(["PRODUCTS"]),
@@ -34,18 +30,17 @@ export default {
         console.log(`${product.name} removed from cart!`);
       }
     },
-    mounted() {
-      this.GET_PRODUCTS_FROM_API().then((response) => {
-        if (response.data) {
-          console.log("Данные о товарах пришли");
-        }
-      });
-    },
+  },
+  beforeMount() {
+    this.GET_PRODUCTS_FROM_API().then((response) => {
+      if (response.data) {
+        console.log("Данные о товарах пришли", response.data);
+      }
+    });
   },
 };
 </script>
 
 <style lang="scss">
-.v-catalog {
-}
+.v-catalog {}
 </style>

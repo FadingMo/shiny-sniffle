@@ -7,10 +7,7 @@
     <button class="v-catalog-item__add_to_cart_btn" @click="sendToParent">
       Add to cart
     </button>
-    <button
-      class="v-catalog-item__remove_from_cart_btn"
-      @click="removeFromCart"
-    >
+    <button class="v-catalog-item__remove_from_cart_btn" @click="removeFromCart">
       Remove from cart
     </button>
   </div>
@@ -29,6 +26,9 @@ export default {
   },
   data() {
     return {};
+  },
+  mounted() {
+    console.log(this.productData);
   },
   methods: {
     sendToParent() {

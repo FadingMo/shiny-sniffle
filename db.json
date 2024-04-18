@@ -3,7 +3,7 @@
     {
       "image": "1.png",
       "name": "Analyst",
-      "price": 2100,
+      "price": 21000,
       "article": "T1",
       "available": true,
       "category": "it products",
@@ -13,7 +13,7 @@
     {
       "image": "2.png",
       "name": "Designer",
-      "price": 3150,
+      "price": 31500,
       "article": "T2",
       "available": true,
       "category": "it products",
@@ -23,7 +23,7 @@
     {
       "image": "3.png",
       "name": "Marketer",
-      "price": 4200,
+      "price": 42000,
       "article": "T3",
       "available": false,
       "category": "it products",
@@ -33,7 +33,7 @@
     {
       "image": "4.png",
       "name": "Developer",
-      "price": 5300,
+      "price": 53000,
       "article": "T4",
       "available": true,
       "category": "it products",
@@ -43,7 +43,7 @@
     {
       "image": "5.png",
       "name": "Business Accelerator",
-      "price": 6500,
+      "price": 65000,
       "article": "T5",
       "available": false,
       "category": "it products",
@@ -53,7 +53,7 @@
     {
       "image": "6.png",
       "name": "Engineer",
-      "price": 8700,
+      "price": 87000,
       "article": "T6",
       "available": true,
       "category": "it products",
